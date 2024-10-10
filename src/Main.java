@@ -18,9 +18,9 @@ public class Main {
 
         do {
             // Entrada
-
+            System.out.println("============================================================");
             System.out.println("Pedra, Papel, Tesoura!!");
-            System.out.println("Digite [0] para Pedra, [1] para Papel ou [2] para Tesoura..");
+            System.out.println("Digite [0] para Pedra, [1] para Papel ou [2] para Tesoura...");
             System.out.print("$: ");
             int resposta = teclado.nextInt();
             if (resposta < 0 || resposta > 2) {
@@ -31,6 +31,7 @@ public class Main {
             // Saída
 
             int numero_aleatorio = random.nextInt(3);
+            System.out.println("============================================================");
             System.out.println("Você escolheu: " + opcoes[resposta]);
             System.out.println("O Java escolheu: " + opcoes[numero_aleatorio]);
             if (resposta == numero_aleatorio) {
@@ -42,6 +43,7 @@ public class Main {
                     System.out.println("Você perdeu!!");
                 }
             }
+            System.out.println("============================================================");
 
             // Repetição
 
@@ -50,5 +52,6 @@ public class Main {
         } while (jogarNovamente.equalsIgnoreCase("s"));
 
         System.out.println("Fim");
+        System.out.println("============================================================");
     }
 }
